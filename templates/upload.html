@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<body style="background-color:powderblue;">
+  <head>
+    <meta charset="utf-8">
+    <title>Phuong Flask Server</title>
+  </head>
+  <body>
+    <h1 style="font-size:150%;color:green;">Here, you can upload a 1-megabyte-below file to the API</h1>
+    <p style="font-size:120%;color:blue;">Please, browse the file in your own device by clicking on the Choose-File button, then press the Submit one.</p>
+    <form action = "http://localhost:5000/uploader" 
+      method=post enctype=multipart/form-data>
+     <dl>
+      <p><input type=file name=file></p>
+     </dl>
+      <p><input type = "submit"/></p>
+    </form>
+    <h1 style="font-size:150%;color:green;">A brief conclusion</h1>
+    <p style="font-size:120%;color:blue;">My solution might not be a perfect one. Moreover, it might not reflect all my knowledge, computer programming skills, and experiences neither. However, to what extent, it can show the following messages. </p>
+       <ol style="font-size:120%;color:blue;">
+        <li> First, how I approach such a problem.</li>
+        <li > Second, my strong programming skills and tools, such as Python, Flask, HTML, etc, I can use. For example, I can create a log-in page with the user and password before the user can upload a file to her/his server. However, for simplicity, in this project, I skip it.</li>
+        <li> Last but not least, my potential contributions to your company.</li>
+        </ol> 
+    <p style="font-size:120%;color:blue;">Thank you so much indeed for considering and evaluating my Flask server.</p>
+<p style="font-size:120%;color:blue;">I am looking forward to hearing a positive reply from you soon.</p>
+    {% extends "template.html" %}
+    {% block content %}
+    {% endblock %}  
+   </body>
+</html>

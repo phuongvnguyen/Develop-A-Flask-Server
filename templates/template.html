@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Flask Parent Template</title>
+   <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+ </head>
+ <body>
+    <header>
+      <div class="container">
+        <h1 style="font-size:150%;color:green;">Please, navigate to one of the following pages for further steps!</h1>
+       
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('index_page') }}">Index page</a></li>
+            <li><a href="{{ url_for('upload_page_local') }}">Uploader page (local-hosted API)</a>
+            <li><a href="{{ url_for('upload_page_AWS') }}">Uploader page (AWS-hosted API)</a>
+           <li><a href="{{ url_for('conclusion_page') }}">Project conclusions</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+    
+ </body>
+</html>

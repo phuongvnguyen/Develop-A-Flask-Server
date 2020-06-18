@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<body style="background-color:powderblue;">
+  <head>
+    <meta charset="utf-8">
+    <title>Phuong Flask Server</title>
+  </head>
+  <body> 
+
+    <h1 style="font-size:150%;color:green;text-align:center">Here, you can upload a 1-megabyte-below file to the following AWS-hosted API</h1>
+    <p style="font-size:120%;color:red;text-align:center">https://patw1h5276.execute-api.eu-west-1.amazonaws.com/beta/upload</p>
+    <h1 style="font-size:150%;color:green;">A brief guide to uploading the file</h1>
+    <p style="font-size:120%;color:blue;">Please, browse the file in your own device by clicking on the Choose-File button, then press the Submit one.</p>
+
+    <form action ='https://patw1h5276.execute-api.eu-west-1.amazonaws.com/beta/upload' method=post enctype=multipart/form-data>
+
+     <dl>
+      <p><input type=file name=file></p>
+     </dl>
+      <p><input type = "submit"/></p>
+    </form>
+    
+
+    {% extends "template.html" %}
+    {% block content %}
+    {% endblock %}  
+
+   </body>
+</html>

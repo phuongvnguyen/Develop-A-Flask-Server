@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<body style="background-color:pink;">
+  <head>
+    <meta charset="utf-8">
+    <title>Phuong Flask Server</title>
+</head>
+  <body>
+    <h1 style="font-size:220%;color:green;text-align:center">Welcome to the Phuong Flask Server!</h1>
+    <h1 style="font-size:150%;color:green;">A gentle introduction</h1>
+    <p style="font-size:120%;color:blue;">This is Phuong's solution for the DevOps/Data Engineer Challenge 
+    which is organized by Haensel AMS GmbH & Inc. To this end, I wrote computer programming with Python, Flask, HTML. The fundamental features of my solution are described as follows.</p>
+       
+    <ol style="font-size:120%;color:blue;">
+        <li> First, it has four pages, such as Index, two Uploader pages (local- and AWS-hosted APIs), and conclusion remarks. I would like to want you to evaluate my local-hosted API first, then, the AWS-hosted one.
+        <li > Second, it checks the file size and only sends the 1-megabyte-below  file. If the file size is greater than 1 Megabyte, an error will appear. However, one can change this maximum limit by modifying my Python code.</li>
+       <li > Third, it checks if a file is selected. Otherwise, a warning message will appear as a kind reminder.</li>
+        <li>Fourth, it sends three types of file formats, including 'doc','xls','pdf'. However, One can extend the type of  file format by modifying my underlying HTML codes.If the uploaded file format is not eligible, a warning message will be generated to remind the user. </li>
+        <li> Last but not least, it examines whether the uploaded file is forged and dangerous.</li>
+    </ol> 
+    
+    
+    {% extends "template.html" %}
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
